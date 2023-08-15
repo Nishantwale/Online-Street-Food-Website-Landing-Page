@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Food Website Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images\vadapav logo.png" class="logo animate__animated animate__rotateIn"></a>
+            <ul class="animate__animated animate__rollIn">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="https://mail/mr_nishant_283">MAIL</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox animate__animated animate__zoomInDown">
+               <h2>Welcome to<br><span>Street Foods</span></h2>
+               <p>
+                Hello, I am <b>Nishant Wale.</b>
+                I Welcome you to the My <b>Online Street Food Landing Page.</b> You can order different types of Street food
+                like Vadapav, samosa, and Paav-Bhaji. My Online Street Food landing page brings you 
+                an exquisite selection of these delectable treats that are sure to tantalize your taste buds 
+                and leave you craving for more.
+               </p>
+               <a href="https://www.swiggy.com/restaurants/gajanan-vada-pav-naupada-thane-west-thane-panchpakhadi-mumbai-37382">ORDER NOW</a>
+            </div>
+            <div class="imgBox">
+                <img src="images\vadapav1.png" class="Vadapav animate__animated animate__lightSpeedInLeft">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images\vadapav1.png" onclick="imgSlider('images/vadapav1.png');changeBgColor('#ff0000')"></li>
+            <li><img src="images\samosa3.png" onclick="imgSlider('images/samosa3.png');changeBgColor('#cc00cc')"></li>
+            <li><img src="images\paav bhaji.png"onclick="imgSlider('images/paav bhaji.png');changeBgColor('#9999ff')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://github.com/Nishantwale"><img src="images\github 1.png" class="animate__animated animate__backInDown"></a></li>
+            <li><a href="https://www.linkedin.com/in/nishant-wale-6b2b641a2"><img src="images\linkedin4.png" class="animate__animated animate__zoomInDown"></a></li>
+            <li><a href="https://instagram.com/mr_nishant_283"><img src="images\instagram.png" class="animate__animated animate__rotateIn"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Vadapav').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
